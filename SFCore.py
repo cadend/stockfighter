@@ -51,7 +51,7 @@ class SFCore:
 		return self.position[stock]
 
 
-	def get_quote(self):
+	def get_quote(self, stock):
 		quote_url = self.BASE_URL + self.venue + "/stocks/" + stock + "/quote"
 		resp, content = self.http.request(self.quote_url, 'GET')
 		return json.loads(content)
