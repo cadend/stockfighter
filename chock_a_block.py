@@ -1,9 +1,8 @@
 #!/usr/local/bin/python
 
-import httplib2
-import urllib
 import time
-import json
+
+from SecretKeys import SecretKeys
 
 TRADE_API_KEY = SecretKeys.API_KEY
 ACCOUNT = "MW69473897"
